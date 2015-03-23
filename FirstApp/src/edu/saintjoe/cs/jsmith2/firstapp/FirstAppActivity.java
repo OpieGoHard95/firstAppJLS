@@ -1,3 +1,6 @@
+// Jared Smith First App
+// CMP 112
+// Begun on March 23, 2015
 package edu.saintjoe.cs.jsmith2.firstapp;
 
 import android.app.Activity;
