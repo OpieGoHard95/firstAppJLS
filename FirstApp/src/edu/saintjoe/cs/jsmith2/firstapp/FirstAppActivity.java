@@ -3,15 +3,8 @@
 //   2. You must comment out this line to compile with "javac"
 package edu.saintjoe.cs.jsmith2.firstapp;
 
-/* App Skeleton
- * Written by Brian Capouch 17 March 2015
- * This app will serve as the basis for student project apps
- */
-// App Skeleton
-// Forked from Capouch added to by Jared Smith
-// 3/18/2016
-// For class
-// Import directives tell Eclipse which components you intend to use
+// Jared Smith
+// Double Code
 import com.google.devtools.simple.runtime.components.Component;
 import com.google.devtools.simple.runtime.components.HandlesEventDispatching;
 import com.google.devtools.simple.runtime.components.android.Button;
