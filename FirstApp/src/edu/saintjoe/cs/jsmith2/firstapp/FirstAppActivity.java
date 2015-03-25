@@ -75,7 +75,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
  	
  	// This code is equivalent to the "Blocks" part of App Inventor
 	    if (component.equals(dubButton) && eventName.equals("Click")){
-	    	String s = numberBox.toString();
+	    	String s = numberBox.Text();
 	    	int i = Integer.parseInt(s);
 	    	int di = (i * 2);
 	    	String dub = "" + di;
