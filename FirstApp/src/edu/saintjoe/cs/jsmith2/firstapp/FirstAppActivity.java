@@ -76,13 +76,9 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
  	// This code is equivalent to the "Blocks" part of App Inventor
 	    if (component.equals(dubButton) && eventName.equals("Click")){
 	    	String s = numberBox.toString();
-	    	statusLabel.Text("Converting to a String");
 	    	int i = Integer.parseInt(s);
-	    	statusLabel.Text("Converting from String to Integer");
 	    	int di = (i * 2);
-	    	statusLabel.Text("Multiplying integer");
 	    	String dub = "" + di;
-	    	statusLabel.Text("Converting back to a String");
 	    	resultLabel.Text(dub);
 	        return true;
 	     } // end dispatch '+' press
