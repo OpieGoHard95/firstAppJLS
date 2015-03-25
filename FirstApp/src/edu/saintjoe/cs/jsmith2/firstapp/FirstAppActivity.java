@@ -78,7 +78,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	    	String s = numberBox.Text();
 	    	int i = Integer.parseInt(s);
 	    	int di = (i * 2);
-	    	String dub = "" + di;
+	    	String dub = Integer.toString(di);
 	    	resultLabel.Text(dub);
 	        return true;
 	     } // end dispatch '+' press
