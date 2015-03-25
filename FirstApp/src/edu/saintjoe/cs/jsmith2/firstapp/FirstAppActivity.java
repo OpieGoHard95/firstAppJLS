@@ -28,6 +28,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	private HorizontalArrangement line1;
 	private HorizontalArrangement line2;
 	private HorizontalArrangement line3;
+	private HorizontalArrangement line4;
 	
 
 	// Next our two components
@@ -36,6 +37,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	private Button dubButton;
 	private Label resultLabel;
 	private TextBox numberBox;
+	private Label statusLabel;
 	
 
  // Java Bridger apps all use $define() in place of main()
@@ -53,12 +55,12 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
    
      
      // Now create the user interface
-     dubButton = new Button(line2,"Double It!)");   
-     resultLabel = new Label(line3,"");
+     dubButton = new Button(line2,"Double It!");   
+     resultLabel = new Label(line3,"Result will appear here!");
      resetButton = new Button(line2, "Reset");
      textLabel = new Label(line1,"Enter a Number");
-     numberBox = new TextBox(line1, "Put it Here");
-     
+     numberBox = new TextBox(line1, "");
+     statusLabel = new Label(line4,"");
      
      // Let the runtime system know which events to report to the dispatcher
      EventDispatcher.registerEventForDelegation(this, "ButtonClick", "Click");
@@ -74,9 +76,13 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
  	// This code is equivalent to the "Blocks" part of App Inventor
 	    if (component.equals(dubButton) && eventName.equals("Click")){
 	    	String s = numberBox.toString();
+	    	statusLabel.Text("Converting to a String");
 	    	int i = Integer.parseInt(s);
+	    	statusLabel.Text("Converting from String to Integer");
 	    	int di = (i * 2);
+	    	statusLabel.Text("Multiplying integer");
 	    	String dub = "" + di;
+	    	statusLabel.Text("Converting back to a String");
 	    	resultLabel.Text(dub);
 	        return true;
 	     } // end dispatch '+' press
