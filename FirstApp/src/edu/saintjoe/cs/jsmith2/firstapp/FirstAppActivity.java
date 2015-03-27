@@ -37,7 +37,6 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	private Button dubButton;
 	private Label resultLabel;
 	private TextBox numberBox;
-	private Label statusLabel;
 	
 
  // Java Bridger apps all use $define() in place of main()
@@ -60,7 +59,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
      resetButton = new Button(line2, "Reset");
      textLabel = new Label(line1,"Enter a Number");
      numberBox = new TextBox(line1, "");
-     statusLabel = new Label(line4,"");
+     numberBox.NumbersOnly(true);
      
      // Let the runtime system know which events to report to the dispatcher
      EventDispatcher.registerEventForDelegation(this, "ButtonClick", "Click");
